@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Название квеста"
+            android:id="@+id/tvQuestName"
+            android:layout_column="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Дата квеста"
+            android:id="@+id/tvQuestDate"
+            android:layout_column="1"
+            android:layout_marginLeft="30dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Количество задач"
+            android:id="@+id/tvQuestTaskCount"
+            android:layout_column="1"
+            android:layout_marginLeft="30dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Опыт"
+            android:id="@+id/tvQuestExp"
+            android:layout_column="1"
+            android:layout_marginLeft="30dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Статус"
+            android:id="@+id/tvQuestStatus"
+            android:layout_column="1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="5dp" />
+    </TableRow>
+</TableLayout>

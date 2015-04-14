@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_progress"
+        android:indeterminate="false"
+        android:max="100"
+        android:visibility="invisible" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/svProfile"
+        android:layout_margin="15dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/profile_form">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:id="@+id/ivAva"
+                android:scaleType="fitCenter"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Имя пользователя"
+                android:id="@+id/tvName"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="31dp"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Очков до нового уровня"
+                android:id="@+id/tvLevel"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LibertyGuard</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_profile">Тут будет профайл</string>
+    <string name="text_rating">Тут будет рейтинг</string>
+    <string name="text_quest">Тут будут квесты</string>
+        <string name="title_activity_one">OneActivity</string>
+        <string name="title_activity_two">TwoActivity</string>
+    <string name="main_description">Main Text</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="menu_finish">Выход</string>
+
+</resources>
