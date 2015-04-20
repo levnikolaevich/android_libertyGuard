@@ -1,6 +1,7 @@
 package ru.libertyguard.libertyguard;
 
 import android.content.Context;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -13,6 +14,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AbsListView;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -58,6 +61,46 @@ public class QuestFragment extends Fragment {
             Toast.makeText(getActivity(),"Проверьте соединение с интернетом",Toast.LENGTH_LONG).show();
         }
 
+
+
+        lvMain.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
+                Log.d("СПИСОК", "itemClick: position = " + position + ", id = "
+                        + id);
+
+                Intent intent = new Intent(getActivity(), TaskListActivity.class);
+                intent.putExtra("id", id );
+                startActivity(intent);
+
+            }
+        });
+
+        /*
+        lvMain.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> parent, View view,
+                                       int position, long id) {
+                Log.d("СПИСОК", "itemSelect: position = " + position + ", id = "
+                        + id);
+            }
+
+            public void onNothingSelected(AdapterView<?> parent) {
+                Log.d("СПИСОК", "itemSelect: nothing");
+            }
+        });
+
+        lvMain.setOnScrollListener(new AbsListView.OnScrollListener() {
+            public void onScrollStateChanged(AbsListView view, int scrollState) {
+                Log.d("СПИСОК", "scrollState = " + scrollState);
+            }
+
+            public void onScroll(AbsListView view, int firstVisibleItem,
+                                 int visibleItemCount, int totalItemCount) {
+                Log.d("СПИСОК", "scroll: firstVisibleItem = " + firstVisibleItem
+                        + ", visibleItemCount" + visibleItemCount
+                        + ", totalItemCount" + totalItemCount);
+            }
+        });*/
 
 
         return view;
@@ -188,6 +231,8 @@ public class QuestFragment extends Fragment {
            // showProgress(false);
         }
     }
+
+
 
 
 }

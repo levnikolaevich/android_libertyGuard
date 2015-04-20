@@ -11,5 +11,6 @@
     <string name="main_description">Main Text</string>
     <string name="menu_settings">Настройки</string>
     <string name="menu_finish">Выход</string>
+        <string name="title_activity_task_list">TaskListActivity</string>
 
 </resources>

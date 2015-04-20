@@ -7,23 +7,30 @@ public class Task {
 
     int id;
     String name;
+    String description;
+    String TimeStart;
+    String TimeEnd;
     int exp;
-    String startDate;
-    int countTask;
-    int idUEQ;
-    int statusId;
+    int moderationStatusId;
+    String moderationStatusName;
+    int isTaskActive;
+    int NeedFoto;
+    int NeedData;
+
     String statusComplete;
 
-    Task(int _id, String _name, int _exp, String _startDate, int _countTask, int _idUEQ, int _statusId, String _statusComplete) {
+    Task(int _id, String _name, String _description,  String _TimeStart, String _TimeEnd, int _exp,  int _moderationStatusId, String _moderationStatusName, int _isTaskActive,  int _NeedFoto, int _NeedData) {
         id = _id;
         name = _name;
+        description = _description;
+        TimeStart = _TimeStart;
+        TimeEnd = _TimeEnd;
         exp = _exp;
-        startDate = _startDate;
-        countTask = _countTask;
-        idUEQ = _idUEQ;
-        statusId = _statusId;
-        statusComplete = _statusComplete;
+        moderationStatusId = _moderationStatusId;
+        moderationStatusName = _moderationStatusName;
+        isTaskActive = _isTaskActive;
+        NeedFoto = _NeedFoto;
+        NeedData = _NeedData;
     }
-
 
 }
