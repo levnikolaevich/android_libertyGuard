@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="ru.libertyguard.libertyguard.TaskActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Название задачи"
+        android:id="@+id/tvTaskName"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Описание"
+        android:id="@+id/tvTaskDescription"
+        android:layout_below="@+id/tvTaskName"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/etTaskData"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/tvTaskDescription"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pbTaskActivity"
+        android:indeterminate="false"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сделать фотографию"
+        android:id="@+id/btTaskPhoto"
+        android:layout_below="@+id/etTaskData"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Отправить данные"
+        android:id="@+id/btTaskSentData"
+        android:layout_below="@+id/btTaskPhoto"
+        android:layout_alignRight="@+id/btTaskPhoto"
+        android:layout_alignEnd="@+id/btTaskPhoto"
+        android:layout_alignLeft="@+id/btTaskPhoto"
+        android:layout_alignStart="@+id/btTaskPhoto" />
+
+    <ImageView
+        android:layout_width="190dp"
+        android:layout_height="300dp"
+        android:id="@+id/ivTaskPhoto"
+        android:layout_below="@+id/btTaskSentData"
+        android:layout_alignStart="@+id/btTaskSentData"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>

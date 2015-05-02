@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Львиный путь\1. Проекты\3. Бизнес\12. Страж свободы\android_libertyGuard\Camera2Basic\Application\build\intermediates\exploded-aar\com.android.support\support-v13\21.0.2\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="61965ae058916e6a57950dd61b0164dc866af19a">
+        <dex dex="D:\Львиный путь\1. Проекты\3. Бизнес\12. Страж свободы\android_libertyGuard\Camera2Basic\Application\build\intermediates\pre-dexed\debug\classes-50ea7a8604e789a321f50cb59692d1698ba7e6d2.jar" />
+    </item>
+    <item
+        jar="D:\Львиный путь\1. Проекты\3. Бизнес\12. Страж свободы\android_libertyGuard\Camera2Basic\Application\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
+        <dex dex="D:\Львиный путь\1. Проекты\3. Бизнес\12. Страж свободы\android_libertyGuard\Camera2Basic\Application\build\intermediates\pre-dexed\debug\classes-5c21c289ce36c15dc33ab1b23f5491d47c6acd12.jar" />
+    </item>
+    <item
+        jar="D:\Львиный путь\1. Проекты\3. Бизнес\12. Страж свободы\android_libertyGuard\Camera2Basic\Application\build\intermediates\exploded-aar\com.android.support\cardview-v7\21.0.2\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b017100da14f9c158c9f5f2f508333c224b24a7c">
+        <dex dex="D:\Львиный путь\1. Проекты\3. Бизнес\12. Страж свободы\android_libertyGuard\Camera2Basic\Application\build\intermediates\pre-dexed\debug\classes-28a4b1692df86fea245d18f5262127d41cf522b5.jar" />
+    </item>
+    <item
+        jar="D:\Львиный путь\1. Проекты\3. Бизнес\12. Страж свободы\android_libertyGuard\Camera2Basic\Application\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\libs\internal_impl-21.0.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
+        <dex dex="D:\Львиный путь\1. Проекты\3. Бизнес\12. Страж свободы\android_libertyGuard\Camera2Basic\Application\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-62c52795e52e044510ba8622ea87daddba4d1094.jar" />
+    </item>
+    <item
+        jar="D:\Львиный путь\1. Проекты\3. Бизнес\12. Страж свободы\android_libertyGuard\Camera2Basic\Application\build\intermediates\exploded-aar\com.android.support\support-v13\21.0.2\libs\internal_impl-21.0.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9346da9fb778af9e451211bbc3541daced174ba7">
+        <dex dex="D:\Львиный путь\1. Проекты\3. Бизнес\12. Страж свободы\android_libertyGuard\Camera2Basic\Application\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-50d35cd5822152ba920727bec8ee2ada815a65b6.jar" />
+    </item>
+    <item
+        jar="E:\Users\Лев\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.2\support-annotations-21.0.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6">
+        <dex dex="D:\Львиный путь\1. Проекты\3. Бизнес\12. Страж свободы\android_libertyGuard\Camera2Basic\Application\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-e502ba79592dce91c8260df7f37ed407f928c9df.jar" />
+    </item>
+
+</items>

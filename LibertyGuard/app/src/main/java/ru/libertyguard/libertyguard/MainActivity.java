@@ -67,6 +67,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         ActionBar ab = getSupportActionBar();
         ab.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#4190AB")));
         ab.setStackedBackgroundDrawable(new ColorDrawable(Color.parseColor("#3A8098")));
+        ab.setTitle("Страж свободы");
 
        // ab.setDisplayHomeAsUpEnabled(true);
        // ab.NavigationMode = ActionBarNavigationMode.Tabs;
@@ -75,7 +76,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
 
 
 
-        ab.setTitle("Страж свободы");
+
 
 
         // Add three tabs to the Action Bar for display

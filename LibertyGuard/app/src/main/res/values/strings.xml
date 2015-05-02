@@ -6,11 +6,19 @@
     <string name="text_profile">Тут будет профайл</string>
     <string name="text_rating">Тут будет рейтинг</string>
     <string name="text_quest">Тут будут квесты</string>
-        <string name="title_activity_one">OneActivity</string>
-        <string name="title_activity_two">TwoActivity</string>
+    <string name="title_activity_one">OneActivity</string>
+    <string name="title_activity_two">TwoActivity</string>
     <string name="main_description">Main Text</string>
     <string name="menu_settings">Настройки</string>
     <string name="menu_finish">Выход</string>
-        <string name="title_activity_task_list">TaskListActivity</string>
+    <string name="title_activity_task_list">TaskListActivity</string>
+    <string name="title_activity_task">TaskActivity</string>
+    <string name="tvTaskListEmptyText">Задач нет</string>
+    <string name="title_activity_task_index">TaskIndex</string>
+
+    <string name="photo">Photo</string>
+    <string name="video">Video</string>
+    <string name="album_name">LibertyAlbum</string>
+    <string name="cannot">Не получилось</string>
 
 </resources>

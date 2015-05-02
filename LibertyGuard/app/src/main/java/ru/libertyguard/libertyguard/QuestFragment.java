@@ -2,21 +2,17 @@ package ru.libertyguard.libertyguard;
 
 import android.content.Context;
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.StrictMode;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.ListFragment;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AbsListView;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -61,46 +57,22 @@ public class QuestFragment extends Fragment {
             Toast.makeText(getActivity(),"Проверьте соединение с интернетом",Toast.LENGTH_LONG).show();
         }
 
-
-
         lvMain.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                Log.d("СПИСОК", "itemClick: position = " + position + ", id = "
-                        + id);
+
+                Quest value = (Quest) questAdapter.getItem(position);
 
                 Intent intent = new Intent(getActivity(), TaskListActivity.class);
-                intent.putExtra("id", id );
+
+                intent.putExtra("idQuest", Integer.toString(value.id));
+                intent.putExtra("nameQuest", value.name);
+                intent.putExtra("idUEQ", Integer.toString(value.idUEQ));
+
                 startActivity(intent);
 
             }
         });
-
-        /*
-        lvMain.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            public void onItemSelected(AdapterView<?> parent, View view,
-                                       int position, long id) {
-                Log.d("СПИСОК", "itemSelect: position = " + position + ", id = "
-                        + id);
-            }
-
-            public void onNothingSelected(AdapterView<?> parent) {
-                Log.d("СПИСОК", "itemSelect: nothing");
-            }
-        });
-
-        lvMain.setOnScrollListener(new AbsListView.OnScrollListener() {
-            public void onScrollStateChanged(AbsListView view, int scrollState) {
-                Log.d("СПИСОК", "scrollState = " + scrollState);
-            }
-
-            public void onScroll(AbsListView view, int firstVisibleItem,
-                                 int visibleItemCount, int totalItemCount) {
-                Log.d("СПИСОК", "scroll: firstVisibleItem = " + firstVisibleItem
-                        + ", visibleItemCount" + visibleItemCount
-                        + ", totalItemCount" + totalItemCount);
-            }
-        });*/
 
 
         return view;
@@ -139,24 +111,8 @@ public class QuestFragment extends Fragment {
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
-       /* if(questAdapter.getCount() > 0){
-           // QuestAdapter questAdapter2 = (QuestAdapter)lvMain.getAdapter();
-            questAdapter.clearData();
-            questAdapter.notifyDataSetChanged();
-        }*/
-
         getQuestTask = new GetQuestTask("");
         getQuestTask.execute((Void) null);
-
-        /*for (int i = 1; i <= 3; i++) {
-            quests.add(new Quest(i, "Квест" + i,
-                    100*i, i+".04.2015", i*2,i*3,"100%"));
-        }*/
-
-        // подключаемся к БД
-        //SQLiteDatabase db = dbHelper.getWritableDatabase();
-
-
     }
 
 
@@ -193,15 +149,10 @@ public class QuestFragment extends Fragment {
                 String[] parts = quests.split(";");
 
                 for(int q = 0; q  < parts.length-1; q++){
-                    Log.d("Квест"+q, parts[q]);
+
                     String[] quest = parts[q].split(":");
 
-                    for(int r =0; r < quest.length; r++){
-                        Log.d("Квест",quest[r]);
-                    }
-
                     questsList.add(new Quest(Integer.parseInt(quest[0]),quest[1],Integer.parseInt(quest[2]),quest[3], Integer.parseInt(quest[4]),Integer.parseInt(quest[5]),Integer.parseInt(quest[6]),quest[7].trim()));
-
                 }
 
             }
@@ -231,8 +182,5 @@ public class QuestFragment extends Fragment {
            // showProgress(false);
         }
     }
-
-
-
 
 }

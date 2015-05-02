@@ -1,7 +1,7 @@
 package ru.libertyguard.libertyguard;
 
 /**
- * Created by Лев on 14.04.2015.
+ * Задача 14.04.2015.
  */
 public class Task {
 
@@ -16,8 +16,6 @@ public class Task {
     int isTaskActive;
     int NeedFoto;
     int NeedData;
-
-    String statusComplete;
 
     Task(int _id, String _name, String _description,  String _TimeStart, String _TimeEnd, int _exp,  int _moderationStatusId, String _moderationStatusName, int _isTaskActive,  int _NeedFoto, int _NeedData) {
         id = _id;
